@@ -1,0 +1,71 @@
+/* Apply basic styling for the body and header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f7c52f;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+/* Apply styling for main content sections */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+section {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Apply styling for images within sections */
+section img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Apply styling for recipe details */
+section h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+section h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+section ul, section ol {
+    margin-bottom: 10px;
+}
+
+/* Apply styling for the footer */
+footer {
+    background-color: #f7c52f;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
