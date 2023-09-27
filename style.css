@@ -4,6 +4,24 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    display: flex;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#movie .normal {
+    margin-bottom: 20px;
+}
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -19,6 +37,19 @@ body {
         font-size: 16px; /* Adjust font size */
     }
 }
+/* For animation*/
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); /* Bouncing up */
+  }
+  40% {
+    transform: translateY(-30px); /* Bouncing down */
+  }
+  60% {
+    transform: translateY(-15px); /* Bouncing up slightly */
+  }
+}
 
 .container {
     padding: 20px;
@@ -30,12 +61,14 @@ body {
 }
 
 .text-on-img {
-    position: absolute;
+    position: center;
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     color: white; 
     padding: 20px;
+    opacity: 0.7;
+    animation: bounce 1s ease infinite;
 }
 
 .button {
