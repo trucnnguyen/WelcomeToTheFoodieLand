@@ -3,12 +3,62 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    body {
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+@media (min-width: 769px) {
+    /* Adjust styles for larger screens */
+    body {
+        font-size: 16px; /* Adjust font size */
+    }
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+}
+
+.text-on-img {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    padding: 20px;
+}
+
+.button {
+    background-color: #9b8afb; 
+    color: #f9f0f0; 
+    padding: 10px 20px; 
+    font-size: 18px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
 }
 
 header {
-    background-color: #f7c52f;
+    background-color: #d2b7e6;
     padding: 20px;
     text-align: center;
+    color: white
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 header h1 {
@@ -30,25 +80,59 @@ main {
 }
 
 section {
-    width: 45%;
-    margin-bottom: 20px;
+    width: 30%;
+    margin: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
+    background-color: white;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+section b {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+/* Navigation Styles */
+nav {
+    background-color: #addbef;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
 /* Apply styling for images within sections */
 section img {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 10px;
+    margin: 0 auto;
 }
 
 /* Apply styling for recipe details */
 section h2 {
     font-size: 24px;
     margin-top: 10px;
+    background: rgba(241, 155, 231, 0.5);
 }
 
 section h3 {
@@ -58,14 +142,97 @@ section h3 {
 
 section ul, section ol {
     margin-bottom: 10px;
+    list-style-type: square;
+    margin-left: 20px;
 }
-
+ul {
+    padding-left: 20px;
+}
 /* Apply styling for the footer */
 footer {
-    background-color: #f7c52f;
+    background-color: #d2b7e6;
     text-align: center;
     padding: 10px;
     position: static;
     width: 100%;
     bottom: 0;
+}
+/* Form Styles */
+#feelings {
+    width: 100%;
+}
+
+/* Quote Styles */
+q {
+    font-style: italic;
+}
+
+/* Emphasis Styles */
+em {
+    font-style: italic;
+}
+
+nav li {
+    font-weight: bold;
+    font-size: 18px; 
+}
+
+main {
+    background-color: #f0f0f0;
+    padding: 30px;
+}
+
+main section img {
+    border: 2px solid #ccc;
+    border-radius: 10px; 
+}
+
+main section h2 {
+    font-style: italic;
+    color: #040404; 
+}
+
+main section p {
+    font-size: 1px;
+    line-height: 1.6; 
+}
+
+main section button {
+    border: 2px solid #9b8afb;
+    background-color: #9b8afb;
+    color: #fff; 
+    border-radius: 5px; 
+    cursor: pointer;
+    padding: 12px 24px; 
+    font-size: 16px; 
+}
+
+main section b {
+    color: #ff5733;
+    font-weight: bold; 
+}
+
+main section a {
+    color: white;
+    text-decoration: none; /* Removed underline for links */
+}
+
+main section ul, main section ol {
+    padding-left: 20px; /* Adjusted padding for lists */
+}
+
+ul li {
+    list-style-type: disc; /* Changed list style type */
+}
+
+fieldset {
+    border: 2px solid #d2b7e6;
+    border-radius: 10px; 
+    padding: 20px; 
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px; 
 }
