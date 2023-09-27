@@ -61,7 +61,7 @@ html {
 }
 
 .text-on-img {
-    position: center;
+    position: static;
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
